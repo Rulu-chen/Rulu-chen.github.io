@@ -1,0 +1,125 @@
+$primary-color:tomato;
+$base-font-size: 16px;//運算的變數
+
+
+a{
+    border-bottom: 1px solid $primary-color;
+}
+h1{
+    color: $primary-color;
+}
+nav{
+    width: 50px;
+    color: red;
+    ul{
+        font-size: 2rem;
+        li{
+            border-bottom: 1px solid $primary-color;
+        }
+    }
+}
+
+// mixin設定 無預設值
+@mixin font-size($fz:small){
+  font-size: $fz;
+}
+.button{
+  @include font-size(large);
+}
+@mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  .button {
+    @include border-radius(5px);
+  }
+  
+  .card {
+    @include border-radius(10px);
+  }
+
+  // mixin設定 有預設值
+  @mixin box-shadow($value: 2px 2px 4px #888888) {
+    box-shadow: $value;
+  }
+  
+  .element {
+    @include box-shadow; // 沒設定時使用預設值
+  }
+  
+  .card {
+    @include box-shadow(4px 4px 8px #555555); // 覆寫預設值
+  }
+  
+
+// 佔位符(%)繼承(extend)
+  %button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .primary-button {
+    @extend %button;
+    background-color: orange;
+  }
+  .secondary-button {
+    @extend %button;
+    background-color: tomato;
+  }
+
+  
+// 運算
+body {
+  font-size: $base-font-size * 1.5;
+}
+
+// if/elsa
+$theme: dark; //if/else的變數
+.button {
+  @if $theme == light {
+    background-color: #fff;
+    color: #333;
+  } @else {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+//each
+$colors: red, blue, green, yellow;
+
+@each $color in $colors {
+  .#{$color}-color {
+    background-color: $color;
+  }
+}
+
+//for
+$columns: 5;
+
+.row {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: percentage($i / $columns);
+    }
+  }
+}
+
+//while
+$i: 1;
+
+@while $i < 5 {
+  .item-#{$i} {
+    width: 50px * $i;
+  }
+  $i: $i + 1;
+}
+
+$j:1;
+@while $j < 4{
+  .col-#{$j}{
+    height: 30px * $j;
+  }
+  $j: $j+1;
+}
+
+

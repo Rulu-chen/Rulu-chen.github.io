@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品列表|Rukilulu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+
+    <!-- main Start -->
+    <main class="flex-grow-1 flex-shrink-1 mb-5">
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img  src="./public/imges/favicon.png" alt="" /> Rukilulu
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">關於我們</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="product-list.html">產品列表</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="store.html">店家資訊</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">常見問題</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-block d-lg-none"
+                    href="javascript;"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >會員登入</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-block d-lg-none" href="cart.html">購物車</a>
+                </li>
+              </ul>
+              <div class="d-flex flex-column flex-lg-row">
+                <!-- 會員登入 -->
+                <a
+                  href="javascript;"
+                  class="d-lg-block d-none me-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  ><i class="bi bi-person-arms-up fs-2 text-success"></i
+                ></a>
+                <!-- 購物車 -->
+                <a
+                  href="#"
+                  class="position-relative d-lg-block d-none me-3"
+                >
+                  <span
+                    class="position-absolute top-0 start-100 cartpos translate-middle badge rounded-pill bg-danger"
+                    >5<span class="visually-hidden">unread messages</span></span
+                  >
+                  <i class="bi bi-cart4 fs-2 text-success"></i>
+                </a>
+                <!-- 推特 -->
+                <a href="#" class="me-3"
+                  ><i class="bi bi-twitter fs-2 text-success"></i
+                ></a>
+              </div>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+      </nav>
+      <!-- navbar end -->
+  
+      <!-- 麵包屑 start -->
+      <div class="bg-light pt-4 pb-2">
+          <div class="container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="link-dark text-decoration-none" href="index.html">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">產品列表</li>
+              </ol>
+            </nav>
+          </div>
+      </div>
+      <!-- 麵包屑 end -->
+  
+      <!-- .container>.row>.col-12.col-md-4{左}+.col-12.col-md-8{右} -->
+      <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <h1 class="col-12 text-center bg-warning mb-3 mt-3">產品列表</h1>
+              <div class="list-group mt-0">
+                <a href="#" class="list-group-item list-group-item-action">基礎材料</a>
+                <a href="#" class="list-group-item list-group-item-action">梭織商品</a>
+                <a href="#" class="list-group-item list-group-item-action">針織商品</a>
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">鉤針娃娃</a>
+                <a href="#" class="list-group-item list-group-item-action">藍染商品</a>
+                
+              </div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="row text-center">
+                <h1 class="col-12 text-center text-primary mb-3 mt-3">鉤針娃娃</h1>
+                <!-- .container>.row.text-center>.col-12.h1{產品列表}+.col-12.col-md-6.col-xl-3.mb-4*20>a>img.w-100[src="https://placehold.co/600x400"]^a.link-dark[href="#"]{產品$} -->
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/pd01.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">多色恐龍鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p02.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">鄉村女孩鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p03.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">新娘女孩鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p04.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">小洋裝女孩鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p05.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">兔子鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p06.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">小熊鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p07.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">毛帽動物鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p08.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">仙人掌鄉鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p09.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">畫家鼠鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p10.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">洋裝小熊鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p11.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">動物雙子鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p12.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">兔子雙子鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p02.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">鄉村女孩鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p03.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">新娘女孩鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p04.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">小洋裝女孩鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p05.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">兔子鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p06.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">小熊鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p07.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">毛帽動物鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p08.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">仙人掌鄉鉤針娃娃</a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                  <a href="product.html"
+                    ><img class="w-100 " src="public/imges/p09.jpg" alt="" /></a
+                  ><a href="product.html" class="link-dark text-decoration-none">畫家鼠鉤針娃娃</a>
+                </div>
+                <!-- 分頁 START -->
+            
+                  <nav aria-label="Page navigation example ">
+                    <ul class="pagination justify-content-center ">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+    
+                <!-- 分頁 END -->
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>
+    <!-- main end -->
+
+
+    <!-- footer Start -->
+    <footer class="bg-light p-3 text-end">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div>Copyright © 2024 Rukilulu Design by Chen Jill</div>
+            <div>網頁僅供資展國際作業使用，不為商業用途。</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <h3 class="modal-title" id="exampleModalLabel">會員登入</h3>
+        <p>快速登入 購物累積點數</p>
+        <form action="" class="needs-validation" novalidate>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control " id="account" name="account" placeholder="name@example.com" required>
+            <label for="account"  class="form-label">帳號</label>
+            <div class="invalid-feedback">此為必填項目</div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            <label for="password"  class="form-label">密碼</label>
+            <div class="invalid-feedback">此為必填項目</div>
+          </div>
+          <div class="d-grid gap-2 mt-4 mb-2">
+            <button class="btn btn-warning btn-lg" type="submit">登入</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>

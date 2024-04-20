@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常見問題|Rukilulu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+  
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+
+    <!-- main Start -->
+    <main class="flex-grow-1 flex-shrink-1 mb-5">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img  src="./public/imges/favicon.png" alt="" /> Rukilulu
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                >關於我們</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product-list.html">產品列表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">店家資訊</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="faq.html">常見問題</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-block d-lg-none"
+                href="javascript;"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >會員登入</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block d-lg-none" href="cart.html">購物車</a>
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row">
+            <!-- 會員登入 -->
+            <a
+              href="javascript;"
+              class="d-lg-block d-none me-3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              ><i class="bi bi-person-arms-up fs-2 text-success"></i
+            ></a>
+            <!-- 購物車 -->
+            <a
+              href="#"
+              class="position-relative d-lg-block d-none me-3"
+            >
+              <span
+                class="position-absolute top-0 start-100 cartpos translate-middle badge rounded-pill bg-danger"
+                >5<span class="visually-hidden">unread messages</span></span
+              >
+              <i class="bi bi-cart4 fs-2 text-success"></i>
+            </a>
+            <!-- 推特 -->
+            <a href="#" class="me-3"
+              ><i class="bi bi-twitter fs-2 text-success"></i
+            ></a>
+          </div>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- 麵包屑 start -->
+    <div class="bg-light pt-4 pb-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="link-dark text-decoration-none" href="index.html">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">常見問題</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- 麵包屑 end -->
+
+        
+    <!-- 手風琴 start -->
+    <!-- .container>.row>.col-12.col-md-6{左}+.col-12.col-md-6{右}^.row>.col-12.col-md-6{左}+.col-12.col-md-6{右} -->
+    <div class="container cotainer-small">
+      
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+          <h1 class="col-12 text-center bg-warning mb-3 mt-3 py-2">Q&A總覽</h1>
+          <div class="list-group mt-0">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              #問題精選
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">#課程問題</a>
+            <a href="#" class="list-group-item list-group-item-action">#其他問題</a>
+            
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-9">
+          <h1 class="text-center text-primary mb-3 mt-3">常見問題</h1>
+          <h3>#問題精選</h3>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Q：Rukilulu 工作坊提供哪些手作織品課程？
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  A： 我們提供多樣化的手作織品課程，包括基礎的編織技巧、不同材料的應用、藝術設計等。您可以在我們的官方網站上查看最新的課程資訊。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Q：我是初學者，能參加 Rukilulu 工作坊嗎？
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  A： 當然可以！我們歡迎所有程度的參與者，包括初學者。我們的課程設計適用於各個技能水平，並有專業的導師提供指導。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Q：我需要自備材料嗎？
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  A： 大部分課程的材料都包含在報名費用中。如果有需要您自備材料的情況，我們會在課程資訊中提前通知。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  Q：工作坊場地設備如何？
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                  A： Rukilulu 工作坊擁有舒適的環境和專業的工具，確保您在創作過程中有良好的體驗。我們提供所有必要的工具和設備。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                  Q：工作坊費用如何計算？
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                <div class="accordion-body">
+                  A： 費用會根據不同的課程而有所變化。您可以在官方網站上查看每個課程的具體價格和報名方式。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                  Q：我可以在工作坊購買已完成的手作品嗎？
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                <div class="accordion-body">
+                  A： 是的，我們工作坊內也設有精選手作品的銷售區，您可以選購已經完成的手作織品。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSeve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeve" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeve">
+                  Q：有團體報名的優惠嗎？
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseSeve" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeve">
+                <div class="accordion-body">
+                  A： 是的，我們提供團體報名優惠。如果您有團體參與的需求，請聯繫我們的客服人員獲取相關資訊。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 手風琴 End -->
+  </main>
+  <!-- main end -->
+
+    <!-- footer Start -->
+    <footer class="bg-light p-3 text-end">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div>Copyright © 2024 Rukilulu Design by Chen Jill</div>
+            <div>網頁僅供資展國際作業使用，不為商業用途。</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <h3 class="modal-title" id="exampleModalLabel">會員登入</h3>
+            <p>快速登入 購物累積點數</p>
+            <form action="" class="needs-validation" novalidate>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control "
+                  id="account"
+                  name="account"
+                  placeholder="name@example.com"
+                  required
+                />
+                <label for="account" class="form-label">帳號</label>
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+                <label for="password" class="form-label">密碼</label>
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+              <div class="d-grid gap-2 mt-4 mb-2">
+                <button class="btn btn-warning btn-lg" type="submit">
+                  登入
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>

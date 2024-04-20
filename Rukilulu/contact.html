@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聯絡我們|Rukilulu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- bootstrap datepiker css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"
+      integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+
+    <!-- main Start -->
+    <main class="flex-grow-1 flex-shrink-1 mb-5">
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img  src="./public/imges/favicon.png" alt="" /> Rukilulu
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">關於我們</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product-list.html">產品列表</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="store.html">店家資訊</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">常見問題</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-block d-lg-none"
+                    href="javascript;"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >會員登入</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-block d-lg-none" href="cart.html">購物車</a>
+                </li>
+              </ul>
+              <div class="d-flex flex-column flex-lg-row">
+                <!-- 會員登入 -->
+                <a
+                  href="javascript;"
+                  class="d-lg-block d-none me-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  ><i class="bi bi-person-arms-up fs-2 text-success"></i
+                ></a>
+                <!-- 購物車 -->
+                <a
+                  href="#"
+                  class="position-relative d-lg-block d-none me-3"
+                >
+                  <span
+                    class="position-absolute top-0 start-100 cartpos translate-middle badge rounded-pill bg-danger"
+                    >5<span class="visually-hidden">unread messages</span></span
+                  >
+                  <i class="bi bi-cart4 fs-2 text-success"></i>
+                </a>
+                <!-- 推特 -->
+                <a href="#" class="me-3"
+                  ><i class="bi bi-twitter fs-2 text-success"></i
+                ></a>
+              </div>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+      </nav>
+      <!-- navbar end -->
+  
+          <!-- 麵包屑 start -->
+          <div class="bg-light pt-4 pb-2">
+              <div class="container">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="link-dark text-decoration-none" href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">聯絡我們</li>
+                  </ol>
+                </nav>
+              </div>
+          </div>
+          <!-- 麵包屑 end -->
+  
+      <div class="container container-small">
+          <h1 class="text-center text-primary mb-3 mt-3">聯絡我們</h1>
+          <form action="" class="needs-validation" novalidate>
+            <!-- 聯絡目的start -->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label" for="contact"
+                >聯絡目的</label
+              >
+              <div class="col-12 col-md-9">
+                <select
+                  class="form-select"
+                  id="contact"
+                  name="contact"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected disabled value="">請選擇聯絡目的</option>
+                  <option value="1">客服專區</option>
+                  <option value="2">異業合作</option>
+                  <option value="3">企業採購</option>
+                  <option value="3">聯名商品</option>
+                </select>
+              </div>
+            </div>
+            <!-- 聯絡目的end -->
+    
+            <!-- 姓名 START-->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label" for="username"
+                >姓名</label
+              >
+              <div class="col-12 col-md-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  name="username"
+                  placeholder="請輸入姓名"
+                  required
+                />
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+            </div>
+            <!-- 姓名END -->
+    
+            <!-- 電話 START-->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label" for="phone"
+                >連絡電話</label
+              >
+              <div class="col-12 col-md-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="請輸入電話"
+                  required
+                />
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+            </div>
+            <!-- 電話 END -->
+    
+            <!-- Email START-->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label" for="email"
+                >Email</label
+              >
+              <div class="col-12 col-md-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="請輸入Email"
+                  required
+                />
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+            </div>
+            <!-- Email END -->
+    
+            <!-- 聯絡目的start -->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label" for="store"
+                >消費店家</label
+              >
+              <div class="col-12 col-md-9">
+                <select
+                  class="form-select"
+                  id="store"
+                  name="store"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected disabled value="">請選擇店家</option>
+                  <option>CITYLINK 松山店</option>
+                  <option>士捷店</option>
+                  <option>基隆店</option>
+                  <option>土城店</option>
+                  <option>民安店</option>
+                  <option>府中店</option>
+                  <option>台茂店</option>
+                  <option>桃園藝文店</option>
+                  <option>關新店</option>
+                </select>
+              </div>
+            </div>
+            <!-- 聯絡目的end -->
+    
+            <!-- 消費時間 START-->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label " for="date"
+                >消費時間</label
+              >
+              <div class="col-12 col-md-9">
+                <input
+                  type="text"
+                  class="form-control datepicker"
+                  id="date"
+                  name="date"
+                  autocomplete="off"
+                  required
+                />
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+            </div>
+            <!-- 消費時間 END -->
+    
+            <!-- 主旨 START-->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label" for="title">主旨</label>
+              <div class="col-12 col-md-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  name="title"
+                  placeholder="請輸入主旨"
+                  required
+                />
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+            </div>
+            <!-- 主旨 END -->
+    
+            <!-- 內容 START-->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label" for="comment"
+                >內容</label
+              >
+              <div class="col-12 col-md-9">
+                <textarea
+                  class="form-control"
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="請輸入內容"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+            </div>
+            <!-- 內容 END -->
+    
+            <!-- 驗證碼 START-->
+            <div class="row mb-3">
+              <label class="col-12 col-md-3 col-form-label" for="captcha"
+                >驗證碼</label
+              >
+              <div class="col-12 col-md-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="captcha"
+                  name="captcha"
+                  placeholder="請輸入驗證碼"
+                  required
+                />
+                <div class="invalid-feedback">此為必填項目</div>
+              </div>
+            </div>
+            <!-- 驗證碼 END -->
+            <div class="text-center">
+              <input class="btn btn-warning px-4" type="submit" value="送出" />
+            </div>
+          </form>
+      </div>
+    </main>
+    <!-- main-end -->
+
+    <!-- footer Start -->
+    <footer class="bg-light p-3 text-end">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div>Copyright © 2024 Rukilulu Design by Chen Jill</div>
+            <div>網頁僅供資展國際作業使用，不為商業用途。</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <h3 class="modal-title" id="exampleModalLabel">會員登入</h3>
+        <p>快速登入 購物累積點數</p>
+        <form action="" class="needs-validation" novalidate>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control " id="account" name="account" placeholder="name@example.com" required>
+            <label for="account"  class="form-label">帳號</label>
+            <div class="invalid-feedback">此為必填項目</div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            <label for="password"  class="form-label">密碼</label>
+            <div class="invalid-feedback">此為必填項目</div>
+          </div>
+          <div class="d-grid gap-2 mt-4 mb-2">
+            <button class="btn btn-warning btn-lg" type="submit">登入</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- bootstrap datepiker jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
+      integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- 中文 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/locales/bootstrap-datepicker.zh-TW.min.js"
+      integrity="sha512-JBbOVs1ZLxMgoJ+CLhRotpVngRlsCxS6XsB9hddlH9T0w2NQD9bKWwKAWiVaMj/i5x5XNCbHNB7DO70xs5ol/w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./public/js/common.js"></script>
+    <script src="./public/js/contact.js"></script>
+  </body>
+</html>
